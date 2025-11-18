@@ -1,0 +1,20 @@
+# dependencies
+node_modules
+backend
+server
+
+
+# output
+out
+dist
+build 
+
+
+# dot-environment variable files
+.env
+.env.local
+
+
+bun.lock
+yarn.lock
+package-lock.json
