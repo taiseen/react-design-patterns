@@ -1,13 +1,11 @@
-import ContainerPresenter from "./01-container–presenter";
+import ContainerUserProfile from "./01-container–presenter/learn";
 
 const App = () => {
+	return (
+		<main className="">
+			<ContainerUserProfile userId={1} />
+		</main>
+	);
+};
 
-  return (
-    <main className="container">
-
-      <ContainerPresenter />
-    </main>
-  );
-}
-
-export default App
+export default App;
