@@ -1,4 +1,4 @@
-const UncontrolledFormNoRef = () => {
+const FormWithNoRef = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
 
@@ -30,4 +30,4 @@ const UncontrolledFormNoRef = () => {
 	);
 };
 
-export default UncontrolledFormNoRef;
+export default FormWithNoRef;

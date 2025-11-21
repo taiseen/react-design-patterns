@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-const UncontrolledFeedbackForm = () => {
+const FormWithRef = () => {
 	const nameRef = useRef();
 	const emailRef = useRef();
 	const messageRef = useRef();
@@ -53,4 +53,4 @@ const UncontrolledFeedbackForm = () => {
 	);
 };
 
-export default UncontrolledFeedbackForm;
+export default FormWithRef;
