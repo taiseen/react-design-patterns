@@ -1,33 +1,39 @@
-import ErrorMessage from "../common/ErrorMessage";
 import LoadingSpinner from "../common/LoadingSpinner";
+import ErrorMessage from "../common/ErrorMessage";
 import Post from "./Post";
 
-const PresenterPosts = ({ posts, loading, error, onRetry }) => {
-	if (loading) return <LoadingSpinner message="Loading posts..." />;
+const PresenterPosts = ({ posts, loading, errorMessage, onRetry }) => {
+  if (loading) return <LoadingSpinner message="Loading posts..." />;
 
-	if (error) {
-		return (
-			<ErrorMessage
-				title="Oops! Posts Error"
-				onRetry={onRetry}
-				message={error}
-			/>
-		);
-	}
+  if (errorMessage) {
+    return (
+      <ErrorMessage
+        title="Posts Error"
+        message={errorMessage}
+        onRetry={onRetry}
+      />
+    );
+  }
 
-	const totalPosts = posts.length;
+  const totalPosts = posts.length;
 
-	return (
-		<div className="user-posts">
-			<h2>Recent Posts ({totalPosts})</h2>
+  return (
+    <div className="mt-8">
+      <h2 className="text-xl font-semibold text-white mb-6 flex items-center gap-2">
+        <span>Recent Posts</span>({totalPosts})
+      </h2>
 
-			{totalPosts === 0 ? (
-				<p>No posts yet.</p>
-			) : (
-				posts.map((post) => <Post key={post.id} post={post} />)
-			)}
-		</div>
-	);
+      {totalPosts === 0 ? (
+        <p className="text-gray-500 italic text-center py-12">No posts yet.</p>
+      ) : (
+        <div className="space-y-4">
+          {posts.map((post) => (
+            <Post key={post.id} post={post} />
+          ))}
+        </div>
+      )}
+    </div>
+  );
 };
 
 export default PresenterPosts;
