@@ -9,24 +9,24 @@
 }
 
 .navigateBtnScrollbar {
-    &::-webkit-scrollbar {
-      @apply  w-1.5 h-1.5;
-    }
-  
-    &::-webkit-scrollbar-track {
-      @apply rounded bg-slate-700
-    }
-  
-    &::-webkit-scrollbar-thumb {
-      @apply rounded bg-slate-400
-    }
-  
-    &::-webkit-scrollbar-thumb:hover,
-    &::-webkit-scrollbar-thumb:active {
-      @apply cursor-move
-    }
+  &::-webkit-scrollbar {
+    @apply w-1.5 h-1.5;
+  }
 
-    &::-webkit-scrollbar-corner {
-        @apply bg-slate-700;
-    }
+  &::-webkit-scrollbar-track {
+    @apply rounded bg-slate-700;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    @apply rounded bg-slate-400;
+  }
+
+  &::-webkit-scrollbar-thumb:hover,
+  &::-webkit-scrollbar-thumb:active {
+    @apply cursor-move;
+  }
+
+  &::-webkit-scrollbar-corner {
+    @apply bg-slate-700;
+  }
 }

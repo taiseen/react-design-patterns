@@ -7,6 +7,7 @@ import ContactForm from "../02-controlled-uncontrolled/task/controlled/ContactFo
 import CounterWithRef from "../02-controlled-uncontrolled/learn/CounterWithRef";
 import ProductListContainer from "../01-container–presenter/task/container";
 import ContainerUserProfile from "../01-container–presenter/learn";
+import CompoundLearn from "../03-compound-components/learn";
 
 
 // Define your component array — note: these are component *types*, not JSX elements
@@ -81,7 +82,14 @@ const componentList = [
         props: {}
     },
 
-
+    // Day-3: ✨✨✨ [LEARN] Compound Components
+    {
+        id: "✨ Day-3-learn",
+        title: "Pattern:- Compound Components",
+        description: "sub-components as props to a parent component",
+        component: CompoundLearn,
+        props: {}
+    },
 ];
 
 export default componentList;
