@@ -7,3 +7,26 @@
 .btnV1 {
   @apply bg-purple-500 text-white p-2! rounded w-64 cursor-pointer hover:bg-purple-600 transition-colors duration-200;
 }
+
+.navigateBtnScrollbar {
+    &::-webkit-scrollbar {
+      @apply  w-1.5 h-1.5;
+    }
+  
+    &::-webkit-scrollbar-track {
+      @apply rounded bg-slate-700
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      @apply rounded bg-slate-400
+    }
+  
+    &::-webkit-scrollbar-thumb:hover,
+    &::-webkit-scrollbar-thumb:active {
+      @apply cursor-move
+    }
+
+    &::-webkit-scrollbar-corner {
+        @apply bg-slate-700;
+    }
+}

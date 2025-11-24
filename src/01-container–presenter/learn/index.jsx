@@ -2,7 +2,6 @@ import { fetchUserData, fetchUserPosts, updateUserData } from "./api";
 import { useEffect, useState } from "react";
 import PresenterUserProfile from "./user";
 import PresenterPosts from "./posts";
-import "./styles/index.css";
 
 const ContainerUserProfile = ({ userId = 1 }) => {
   const [user, setUser] = useState(null);
@@ -52,7 +51,7 @@ const ContainerUserProfile = ({ userId = 1 }) => {
   const handleRetry = () => loadData();
 
   return (
-    <div className="relative mx-auto max-w-4xl mt-8 p-4 bg-slate-700 rounded-lg shadow-lg border border-slate-700">
+    <div className="relative mx-auto max-w-4xl mt-8 p-4 bg-slate-700 rounded-lg shadow-lg border border-slate-600">
       <button
         type="button"
         title="Reload data"

@@ -11,7 +11,7 @@ const NavigateBtn = ({ onIndexSelect }) => {
 	}
 
 	return (
-		<div className="fixed top-1/2 -translate-y-1/2 right-2 flex gap-2.5 flex-col bg-slate-900/80 p-2! rounded border border-slate-700/80 shadow-lg z-50">
+		<div className="fixed top-1/2 -translate-y-1/2 right-2 flex gap-2.5 flex-col bg-slate-900/80 p-2! rounded border border-slate-700/80 shadow-lg z-50 h-[290px] overflow-y-auto navigateBtnScrollbar">
 			{componentList.map((obj, idx) => (
 				<button
 					type="button"

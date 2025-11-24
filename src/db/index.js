@@ -1,6 +1,9 @@
+import ContactFormWithRef from "../02-controlled-uncontrolled/task/uncontrolled/ContactFormWithRef";
+import ContactFormNoRef from "../02-controlled-uncontrolled/task/uncontrolled/ContactFormNoRef";
 import FormWithNoRef from "../02-controlled-uncontrolled/learn/uncontrolled/FormWithNoRef";
 import FormWithRef from "../02-controlled-uncontrolled/learn/uncontrolled/FormWithRef";
 import FeedbackForm from "../02-controlled-uncontrolled/learn/controlled/FeedbackForm";
+import ContactForm from "../02-controlled-uncontrolled/task/controlled/ContactForm";
 import CounterWithRef from "../02-controlled-uncontrolled/learn/CounterWithRef";
 import ProductListContainer from "../01-container–presenter/task/container";
 import ContainerUserProfile from "../01-container–presenter/learn";
@@ -55,6 +58,29 @@ const componentList = [
         component: FeedbackForm,
         props: {}
     },
+    // Day-2: ✅✅✅ [TASK] Controlled vs Uncontrolled
+    {
+        id: "✅ Day-2-task-a",
+        title: "Pattern:- Controlled vs Uncontrolled",
+        description: "Controlled - form with validation. This form uses React (useState) to manage input values & (useRef) to access input DOM elements. It provides validation feedback by focusing on invalid fields.",
+        component: ContactForm,
+        props: {}
+    },
+    {
+        id: "✅ Day-2-task-b",
+        title: "Pattern:- Controlled vs Uncontrolled",
+        description: "Uncontrolled - form with validation. Only using (useRefs) to access input values directly without React state.",
+        component: ContactFormWithRef,
+        props: {}
+    },
+    {
+        id: "✅ Day-2-task-c",
+        title: "Pattern:- Controlled vs Uncontrolled",
+        description: "Uncontrolled - form (No Refs). This form does not use React (state) or (refs) to manage input values. It relies on the native HTML form submission & (FormData) API.",
+        component: ContactFormNoRef,
+        props: {}
+    },
+
 
 ];
 
