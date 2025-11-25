@@ -8,6 +8,7 @@ import CounterWithRef from "../02-controlled-uncontrolled/learn/CounterWithRef";
 import ProductListContainer from "../01-container–presenter/task/container";
 import ContainerUserProfile from "../01-container–presenter/learn";
 import CompoundLearn from "../03-compound-components/learn";
+import CompoundTask from "../03-compound-components/taks";
 
 
 // Define your component array — note: these are component *types*, not JSX elements
@@ -86,10 +87,19 @@ const componentList = [
     {
         id: "✨ Day-3-learn",
         title: "Pattern:- Compound Components",
-        description: "sub-components as props to a parent component",
+        description: "Perfect when layout & nesting || child structure/order matters. Parent handles layout + data context, Children handle UI rendering.",
         component: CompoundLearn,
         props: {}
     },
+    // Day-3: ✅✅✅ [TASK] Compound Components
+    {
+        id: "✅ Day-3-task",
+        title: "Pattern:- Compound Components",
+        description: "Perfect when layout & nesting || child structure/order matters. Parent handles layout + data context, Children handle UI rendering.",
+        component: CompoundTask,
+        props: {}
+    },
+    
 ];
 
 export default componentList;
