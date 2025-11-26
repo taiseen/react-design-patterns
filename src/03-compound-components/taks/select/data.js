@@ -12,7 +12,7 @@ export const aiModelLabel = {
     claudeOpus4: 'Claude Opus 4',
     gptO1Preview: 'o1-preview',
     haiku: 'Claude-3 Haiku',
-    deepseek: 'DeepSeek R1',
+    deepSeek: 'DeepSeek R1',
     llama3: 'LLaMA 3 70B',
     gpt4oMini: 'GPT-4o-Mini',
     gptO1Mini: 'o1-mini',
@@ -30,7 +30,6 @@ export const aiModels = [
         model: 'anthropic.claude-3-5-sonnet-20240620-v1:0',
         label: aiModelLabel.claude35sonnetV1,
         icon: '🧠',
-        isDefault: false,
     },
     {
         id: crypto.randomUUID(),
@@ -49,28 +48,24 @@ export const aiModels = [
         model: 'anthropic.claude-sonnet-4-20250514-v1:0',
         label: aiModelLabel.claudeSonnet4,
         icon: '🚀',
-        isDefault: false,
     },
     {
         id: crypto.randomUUID(),
         model: 'anthropic.claude-opus-4-20250514-v1:0',
         label: aiModelLabel.claudeOpus4,
         icon: '🛰️',
-        isDefault: false,
     },
     {
         id: crypto.randomUUID(),
         model: 'deepseek-r1',
-        label: aiModelLabel.deepseek,
+        label: aiModelLabel.deepSeek,
         icon: '🐳',
-        isDefault: false,
     },
     {
         id: crypto.randomUUID(),
         model: 'gpt-4o',
         label: aiModelLabel.gpt4o,
         icon: '⚛️',
-        isDefault: false,
     },
     {
         id: crypto.randomUUID(),
@@ -89,7 +84,6 @@ export const aiModels = [
         model: 'gpt-4.1',
         label: aiModelLabel.gpt41,
         icon: '👁️‍🗨️',
-        isDefault: false,
     },
     {
         id: crypto.randomUUID(),
@@ -103,16 +97,13 @@ export const aiModels = [
         model: 'o3',
         label: aiModelLabel.o3,
         icon: '🎯',
-        isDefault: false,
     },
     {
         id: crypto.randomUUID(),
         model: 'o3-mini',
         label: aiModelLabel.o3mini,
         icon: '🧿',
-        isDefault: false,
     },
-    // 🚫🚫🚫 OFF THIS MODEL 🚫🚫🚫
     {
         id: crypto.randomUUID(),
         model: 'gpt-4o-mini',

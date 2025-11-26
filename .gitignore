@@ -17,4 +17,5 @@ build
 
 bun.lock
 yarn.lock
+pnpm-lock.yaml
 package-lock.json

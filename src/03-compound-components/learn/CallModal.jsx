@@ -1,7 +1,7 @@
-import { useState } from "react";
-import Modal from "./Modal";
-import CallAccordion from "./CallAccordion";
+import Button from "@/components/ui/Button";
 import Accordion from "./Accordion";
+import Modal from "./Modal";
+import { useState } from "react";
 
 const CallModal = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -10,13 +10,9 @@ const CallModal = () => {
 
   return (
     <div className="flex flex-col items-center h-[200px] justify-center">
-      <button
-        type="button"
-        className="btnV1"
-        onClick={() => setIsModalOpen(true)}
-      >
+      <Button className="w-fit" onClick={() => setIsModalOpen(true)}>
         Open Modal
-      </button>
+      </Button>
 
       <Modal isOpen={isModalOpen} onClose={handleModalClose}>
         <Modal.Header>Welcome to the Modal</Modal.Header>
@@ -38,21 +34,23 @@ const CallModal = () => {
         </Modal.Body>
 
         <Modal.Footer>
-          <button
-            type="button"
-            className="btnV1 w-fit! bg-green-600!"
+          <Button
+            size="md"
+            className="w-fit!"
+            variant="confirm"
             onClick={() => alert("Confirmed!")}
           >
             Confirm
-          </button>
+          </Button>
 
-          <button
-            type="button"
-            className="btnV1 w-fit! bg-red-500!"
+          <Button
+            size="md"
+            variant="danger"
+            className="w-fit bg-red-500!"
             onClick={handleModalClose}
           >
             Close
-          </button>
+          </Button>
         </Modal.Footer>
       </Modal>
     </div>

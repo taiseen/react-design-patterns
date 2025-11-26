@@ -1,3 +1,5 @@
+import Button from "@/components/ui/Button";
+
 const UserInfoInput = ({
   onInputChange,
   onSaveProfile,
@@ -28,20 +30,13 @@ const UserInfoInput = ({
       />
 
       <div className="flex gap-4 mt-2">
-        <button
-          type="button"
-          onClick={onCancelEdit}
-          className="px-6 py-3 bg-gray-100 text-gray-700 border border-gray-300 rounded-lg font-medium hover:bg-gray-200 transition"
-        >
+        <Button onClick={onCancelEdit} className="w-fit" variant="ghost">
           Cancel
-        </button>
-        <button
-          type="button"
-          onClick={onSaveProfile}
-          className="px-6 py-3 bg-linear-to-r from-emerald-500 to-emerald-600 text-white font-medium rounded-lg shadow-md hover:from-emerald-600 hover:to-emerald-700 hover:-translate-y-0.5 transition-all"
-        >
+        </Button>
+
+        <Button onClick={onSaveProfile} className="w-fit" variant="confirm">
           Save
-        </button>
+        </Button>
       </div>
     </div>
   );

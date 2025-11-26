@@ -1,3 +1,5 @@
+import Button from "@/components/ui/Button";
+
 const Modal = ({ isOpen, onClose, children }) => {
   if (!isOpen) return null;
 
@@ -10,14 +12,13 @@ const Modal = ({ isOpen, onClose, children }) => {
         className="relative w-full max-w-lg rounded-lg bg-white p-6 shadow-2xl"
         // onClick={(e) => e.stopPropagation()}
       >
-        <button
-          type="button"
+        <Button
           aria-label="Close modal"
-          className="absolute right-3 top-3 rounded-full p-1 hover:bg-red-200 outline-none cursor-pointer duration-300"
+          className="absolute right-3 top-3 rounded-full p-1! hover:bg-red-200! outline-none cursor-pointer duration-300 w-fit! bg-transparent"
           onClick={onClose}
         >
           ✖
-        </button>
+        </Button>
 
         {children}
       </div>
@@ -26,7 +27,7 @@ const Modal = ({ isOpen, onClose, children }) => {
 };
 
 // Compound sub-components
-// these are the sub-components that are attached, 
+// these are the sub-components that are attached,
 // as property of the model component.
 const ModalHeader = ({ children }) => {
   return (

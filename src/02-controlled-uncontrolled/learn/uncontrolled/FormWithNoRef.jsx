@@ -1,3 +1,5 @@
+import Button from "@/components/ui/Button";
+
 const FormWithNoRef = () => {
 	const handleSubmit = (e) => {
 		e.preventDefault();
@@ -23,9 +25,8 @@ const FormWithNoRef = () => {
 				type="email"
 				placeholder="Email"
 			/>
-			<button className="btnV1" type="submit">
-				Submit
-			</button>
+
+			<Button type="submit">Submit</Button>
 		</form>
 	);
 };

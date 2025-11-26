@@ -1,3 +1,4 @@
+import Button from "@/components/ui/Button";
 import { useState, useRef } from "react";
 
 const FeedbackForm = () => {
@@ -63,9 +64,7 @@ const FeedbackForm = () => {
 				placeholder="Your message"
 			/>
 
-			<button className="btnV1" type="submit">
-				Send Feedback
-			</button>
+			<Button type="submit">Send Feedback</Button>
 		</form>
 	);
 };

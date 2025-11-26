@@ -1,3 +1,4 @@
+import Button from "@/components/ui/Button";
 import { useState, useRef } from "react";
 
 const DEFAULT_STATE = {
@@ -136,13 +137,11 @@ const ContactForm = () => {
         onChange={handleChange}
       />
 
-      <button type="submit" className="btnV1">
-        Submit
-      </button>
+      <Button type="submit">Submit</Button>
 
-      <button type="button" className="btnV1" onClick={handleReset}>
+      <Button type="reset" variant="ghost" onClick={handleReset}>
         Reset
-      </button>
+      </Button>
     </form>
   );
 };

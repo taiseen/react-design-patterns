@@ -1,3 +1,4 @@
+import Button from "@/components/ui/Button";
 import { useRef } from "react";
 
 const ContactFormWithRef = () => {
@@ -121,13 +122,11 @@ const ContactFormWithRef = () => {
         placeholder="Address"
       />
 
-      <button type="submit" className="btnV1">
-        Submit
-      </button>
+      <Button type="submit">Submit</Button>
 
-      <button type="button" className="btnV1" onClick={handleReset}>
+      <Button type="reset" variant="ghost" onClick={handleReset}>
         Reset
-      </button>
+      </Button>
     </form>
   );
 };

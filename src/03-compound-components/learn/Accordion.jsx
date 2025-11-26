@@ -1,3 +1,4 @@
+import Button from "@/components/ui/Button";
 import { useState } from "react";
 
 const Accordion = ({ children }) => {
@@ -9,16 +10,15 @@ function AccordionItem({ title, children }) {
 
   return (
     <div className="border border-gray-300 rounded mb-3 last:mb-0 overflow-hidden">
-      <button
-        type="button"
-        className="w-full text-left px-3 py-2 font-medium text-gray-600
-          bg-gray-100 hover:bg-gray-200 outline-none duration-200 cursor-pointer"
+      <Button
         onClick={() => setIsOpen(!isOpen)}
+        className="w-full text-left px-3 py-2 font-medium text-gray-600
+          bg-gray-100! hover:bg-gray-200! rounded-none"
       >
         {title}
 
         <span className="float-right">{isOpen ? "−" : "+"}</span>
-      </button>
+      </Button>
 
       {isOpen && (
         <div className="px-4 py-4 bg-white text-slate-700">{children}</div>

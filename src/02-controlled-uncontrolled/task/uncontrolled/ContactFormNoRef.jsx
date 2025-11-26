@@ -1,3 +1,5 @@
+import Button from "@/components/ui/Button";
+
 const ContactFormNoRef = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -37,14 +39,12 @@ const ContactFormNoRef = () => {
       <input className="inputV1" name="phone" placeholder="Phone" />
       <input className="inputV1" name="hobbies" placeholder="Hobbies" />
       <textarea className="inputV1" name="address" placeholder="Address" />
-      
-      <button className="btnV1" type="submit">
-        Submit
-      </button>
 
-      <button className="btnV1" type="button" onClick={handleReset}>
+      <Button type="submit">Submit</Button>
+
+      <Button type="reset" variant="ghost" onClick={handleReset}>
         Reset
-      </button>
+      </Button>
     </form>
   );
 };
