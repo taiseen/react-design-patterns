@@ -1,16 +1,17 @@
-import ContactFormWithRef from "../02-controlled-uncontrolled/task/uncontrolled/ContactFormWithRef";
-import ContactFormNoRef from "../02-controlled-uncontrolled/task/uncontrolled/ContactFormNoRef";
-import FormWithNoRef from "../02-controlled-uncontrolled/learn/uncontrolled/FormWithNoRef";
-import FormWithRef from "../02-controlled-uncontrolled/learn/uncontrolled/FormWithRef";
-import FeedbackForm from "../02-controlled-uncontrolled/learn/controlled/FeedbackForm";
-import ContactForm from "../02-controlled-uncontrolled/task/controlled/ContactForm";
-import CounterWithRef from "../02-controlled-uncontrolled/learn/CounterWithRef";
-import ProductListContainer from "../01-container–presenter/task/container";
-import ContainerUserProfile from "../01-container–presenter/learn";
-import CompoundLearn from "../03-compound-components/learn";
-import CompoundTask from "../03-compound-components/taks";
-import RenderPropsPattern from "../04-render-props/learn";
+import { lazy } from "react";
 
+const ContactFormWithRef = lazy(() => import("../02-controlled-uncontrolled/task/uncontrolled/ContactFormWithRef"));
+const ContactFormNoRef = lazy(() => import("../02-controlled-uncontrolled/task/uncontrolled/ContactFormNoRef"));
+const FormWithNoRef = lazy(() => import("../02-controlled-uncontrolled/learn/uncontrolled/FormWithNoRef"));
+const FormWithRef = lazy(() => import("../02-controlled-uncontrolled/learn/uncontrolled/FormWithRef"));
+const FeedbackForm = lazy(() => import("../02-controlled-uncontrolled/learn/controlled/FeedbackForm"));
+const ContactForm = lazy(() => import("../02-controlled-uncontrolled/task/controlled/ContactForm"));
+const CounterWithRef = lazy(() => import("../02-controlled-uncontrolled/learn/CounterWithRef"));
+const ProductListContainer = lazy(() => import("../01-container–presenter/task/container"));
+const ContainerUserProfile = lazy(() => import("../01-container–presenter/learn"));
+const CompoundLearn = lazy(() => import("../03-compound-components/learn"));
+const CompoundTask = lazy(() => import("../03-compound-components/task"));
+const RenderPropsPattern = lazy(() => import("../04-render-props/learn"));
 
 // Define your component array — note: these are component *types*, not JSX elements
 const componentList = [

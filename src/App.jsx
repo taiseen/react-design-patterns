@@ -1,8 +1,10 @@
 import NavigateBtn from "./components/NavigateBtn";
+import Loading from "./components/Loading";
 import RootContainerLayout from "./layout";
 import NoDemo from "./components/NoDemo";
 import componentList from "./db";
 import { useState } from "react";
+import { Suspense } from "react";
 
 const App = () => {
 	// Choose which index to show || render in UI
@@ -24,7 +26,9 @@ const App = () => {
 					title={activeComponent.title}
 					description={activeComponent.description}
 				>
-					<activeComponent.component {...activeComponent.props} />
+					<Suspense fallback={<Loading />}>
+						<activeComponent.component {...activeComponent.props} />
+					</Suspense>
 				</RootContainerLayout>
 			) : (
 				<NoDemo />
