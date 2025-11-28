@@ -9,6 +9,7 @@ import ProductListContainer from "../01-container–presenter/task/container";
 import ContainerUserProfile from "../01-container–presenter/learn";
 import CompoundLearn from "../03-compound-components/learn";
 import CompoundTask from "../03-compound-components/taks";
+import RenderPropsPattern from "../04-render-props/learn";
 
 
 // Define your component array — note: these are component *types*, not JSX elements
@@ -99,7 +100,17 @@ const componentList = [
         component: CompoundTask,
         props: {}
     },
-    
+
+
+    // Day-4: ✨✨✨ [LEARN] Compound Components
+    {
+        id: "✨ Day-4-learn",
+        title: "Pattern:- Render Props",
+        description: "Render Props let a component handle logic/state (e.g., mouse position), while the parent controls what to render via a function prop that returns JSX. ",
+        component: RenderPropsPattern,
+        props: {}
+    },
+
 ];
 
 export default componentList;
