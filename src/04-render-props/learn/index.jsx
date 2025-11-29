@@ -2,7 +2,7 @@ import MouseTrackerWithChildren from "./pattern/MouseTrackerWithChildren";
 import MouseTrackerWithRender from "./pattern/MouseTrackerWithRender";
 import Holder from "./components/Holder";
 
-const RenderPropsPattern = () => {
+const RenderPropsPatternLearn = () => {
   return (
     <div className="p-4 grid grid-cols-2 gap-4 flex-wrap h-full">
       {/* Parent → call this component... */}
@@ -29,4 +29,4 @@ const RenderPropsPattern = () => {
   );
 };
 
-export default RenderPropsPattern;
+export default RenderPropsPatternLearn;

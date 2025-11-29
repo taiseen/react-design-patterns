@@ -9,12 +9,12 @@ const ContactForm = lazy(() => import("../02-controlled-uncontrolled/task/contro
 const CounterWithRef = lazy(() => import("../02-controlled-uncontrolled/learn/CounterWithRef"));
 const ProductListContainer = lazy(() => import("../01-container–presenter/task/container"));
 const ContainerUserProfile = lazy(() => import("../01-container–presenter/learn"));
+const RenderPropsPatternLearn = lazy(() => import("../04-render-props/learn"));
+const RenderPropsPatternTask = lazy(() => import("../04-render-props/task"));
 const CompoundLearn = lazy(() => import("../03-compound-components/learn"));
 const CompoundTask = lazy(() => import("../03-compound-components/task"));
-const RenderPropsPattern = lazy(() => import("../04-render-props/learn"));
 
-// Define your component array — note: these are component *types*, not JSX elements
-const componentList = [
+const day1 = [
     // Day-1: ✨✨✨ [LEARN] Container-Presenter
     {
         id: "✨ Day-1-learn",
@@ -31,8 +31,9 @@ const componentList = [
         description: "Container handles api/data logic, Presenter handles UI.",
         props: {}
     },
+]
 
-
+const day2 = [
     // Day-2: ✨✨✨ [LEARN] Controlled vs Uncontrolled Forms
     {
         id: "✨ Day-2-learn-a",
@@ -84,7 +85,9 @@ const componentList = [
         component: ContactFormNoRef,
         props: {}
     },
+]
 
+const day3 = [
     // Day-3: ✨✨✨ [LEARN] Compound Components
     {
         id: "✨ Day-3-learn",
@@ -101,17 +104,32 @@ const componentList = [
         component: CompoundTask,
         props: {}
     },
+]
 
-
+const day4 = [
     // Day-4: ✨✨✨ [LEARN] Compound Components
     {
         id: "✨ Day-4-learn",
         title: "Pattern:- Render Props",
-        description: "Render Props let a component handle logic/state (e.g., mouse position), while the parent controls what to render via a function prop that returns JSX. ",
-        component: RenderPropsPattern,
+        description: "Render Props let a component handle logic/state (e.g., mouse position), while the parent controls what to render via a function prop that returns JSX.",
+        component: RenderPropsPatternLearn,
         props: {}
     },
+    // Day-4: ✅✅✅ [TASK] Compound Components
+    {
+        id: "✅ Day-4-task",
+        title: "Pattern:- Render Props",
+        description: "Render Props let a component handle logic/state, while the parent controls what to render via a function prop that returns JSX.",
+        component: RenderPropsPatternTask,
+        props: {}
+    },
+]
 
+const componentList = [
+    ...day1,
+    ...day2,
+    ...day3,
+    ...day4,
 ];
 
 export default componentList;
