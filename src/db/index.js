@@ -9,10 +9,12 @@ const ContactForm = lazy(() => import("../02-controlled-uncontrolled/task/contro
 const CounterWithRef = lazy(() => import("../02-controlled-uncontrolled/learn/CounterWithRef"));
 const ProductListContainer = lazy(() => import("../01-container–presenter/task/container"));
 const ContainerUserProfile = lazy(() => import("../01-container–presenter/learn"));
+const MovieWithHOCLearn = lazy(() => import("../05-higher-order-component/learn"));
 const RenderPropsPatternLearn = lazy(() => import("../04-render-props/learn"));
 const RenderPropsPatternTask = lazy(() => import("../04-render-props/task"));
 const CompoundLearn = lazy(() => import("../03-compound-components/learn"));
 const CompoundTask = lazy(() => import("../03-compound-components/task"));
+
 
 const day1 = [
     // Day-1: ✨✨✨ [LEARN] Container-Presenter
@@ -125,11 +127,23 @@ const day4 = [
     },
 ]
 
+const day5 = [
+    // Day-5: ✨✨✨ [LEARN] Compound Components
+    {
+        id: "✨ Day-5-learn",
+        title: "Pattern:- Higher Order Component (HOC)",
+        description: "(HOCs) are a common pattern in React for reusing logic between components. They are a function that takes a component and returns a new component with enhanced functionality.",
+        component: MovieWithHOCLearn,
+        props: {}
+    },
+]
+
 const componentList = [
     ...day1,
     ...day2,
     ...day3,
     ...day4,
+    ...day5,
 ];
 
 export default componentList;
