@@ -10,6 +10,7 @@ const CounterWithRef = lazy(() => import("../02-controlled-uncontrolled/learn/Co
 const ProductListContainer = lazy(() => import("../01-container–presenter/task/container"));
 const ContainerUserProfile = lazy(() => import("../01-container–presenter/learn"));
 const MovieWithHOCLearn = lazy(() => import("../05-higher-order-component/learn"));
+const RoleWithHOCTask = lazy(() => import("../05-higher-order-component/task"));
 const RenderPropsPatternLearn = lazy(() => import("../04-render-props/learn"));
 const RenderPropsPatternTask = lazy(() => import("../04-render-props/task"));
 const CompoundLearn = lazy(() => import("../03-compound-components/learn"));
@@ -109,7 +110,7 @@ const day3 = [
 ]
 
 const day4 = [
-    // Day-4: ✨✨✨ [LEARN] Compound Components
+    // Day-4: ✨✨✨ [LEARN] Render Props
     {
         id: "✨ Day-4-learn",
         title: "Pattern:- Render Props",
@@ -117,7 +118,7 @@ const day4 = [
         component: RenderPropsPatternLearn,
         props: {}
     },
-    // Day-4: ✅✅✅ [TASK] Compound Components
+    // Day-4: ✅✅✅ [TASK] Render Props
     {
         id: "✅ Day-4-task",
         title: "Pattern:- Render Props",
@@ -128,12 +129,20 @@ const day4 = [
 ]
 
 const day5 = [
-    // Day-5: ✨✨✨ [LEARN] Compound Components
+    // Day-5: ✨✨✨ [LEARN] Higher Order Component
     {
         id: "✨ Day-5-learn",
         title: "Pattern:- Higher Order Component (HOC)",
         description: "(HOCs) are a common pattern in React for reusing logic between components. They are a function that takes a component and returns a new component with enhanced functionality.",
         component: MovieWithHOCLearn,
+        props: {}
+    },
+    // Day-5: ✅✅✅ [TASK] Higher Order Component
+    {
+        id: "✅ Day-5-task",
+        title: "Pattern:- Higher Order Component (HOC)",
+        description: "(HOCs) are a common pattern in React for reusing logic between components. They are a function that takes a component and returns a new component with enhanced functionality.",
+        component: RoleWithHOCTask,
         props: {}
     },
 ]
