@@ -7,15 +7,15 @@ const buttonStyle = tv({
   variants: {
     variant: {
       solid:
-        "bg-purple-500 text-white enabled:hover:bg-purple-600 cursor-pointer",
+        "border border-transparent bg-purple-500 text-white enabled:hover:bg-purple-600 cursor-pointer",
       blue:
-        "bg-blue-600 text-white enabled:hover:bg-blue-700 cursor-pointer",
+        "border border-transparent bg-blue-600 text-white enabled:hover:bg-blue-700 cursor-pointer",
       confirm:
-        "bg-green-500 text-white enabled:hover:bg-green-600 cursor-pointer",
+        "border border-transparent bg-green-500 text-white enabled:hover:bg-green-600 cursor-pointer",
       caution:
-        "bg-yellow-500 text-gray-900 enabled:hover:bg-yellow-600 cursor-pointer",
+        "border border-transparent bg-yellow-500 text-gray-900 enabled:hover:bg-yellow-600 cursor-pointer",
       danger:
-        "bg-red-500 text-slate-100 enabled:hover:bg-red-700 cursor-pointer",
+        "border border-transparent bg-red-500 text-slate-100 enabled:hover:bg-red-700 cursor-pointer",
       ghost:
         "border border-purple-500 text-purple-500 cursor-pointer enabled:hover:bg-purple-50 enabled:hover:text-purple-700",
     },

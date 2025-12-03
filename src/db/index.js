@@ -15,6 +15,7 @@ const RenderPropsPatternLearn = lazy(() => import("../04-render-props/learn"));
 const RenderPropsPatternTask = lazy(() => import("../04-render-props/task"));
 const CompoundLearn = lazy(() => import("../03-compound-components/learn"));
 const CompoundTask = lazy(() => import("../03-compound-components/task"));
+const CustomHookLearn = lazy(() => import("../06-custom-hook/learn"));
 
 
 const day1 = [
@@ -147,12 +148,33 @@ const day5 = [
     },
 ]
 
+const day6 = [
+    // Day-6: ✨✨✨ [LEARN] Custom Hook
+    {
+        id: "✨ Day-6-learn",
+        title: "Pattern:- Custom Hook",
+        description: "Custom hooks are functions that let you reuse stateful logic between components. They are a way to abstract away complex logic and make it easier to reuse across multiple components.",
+        component: CustomHookLearn,
+        props: {}
+    },
+    // Day-6: ✅✅✅ [TASK] Custom Hook
+    // {
+    //     id: "✅ Day-6-task",
+    //     title: "Pattern:- Custom Hook",
+    //     description: "Custom hooks are functions that let you reuse stateful logic between components. They are a way to abstract away complex logic and make it easier to reuse across multiple components.",
+    //     component: CustomHookTask,
+    //     props: {}
+    // },
+]
+
+
 const componentList = [
     ...day1,
     ...day2,
     ...day3,
     ...day4,
     ...day5,
+    ...day6,
 ];
 
 export default componentList;

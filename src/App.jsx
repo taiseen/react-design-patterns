@@ -8,7 +8,7 @@ import { Suspense } from "react";
 
 const App = () => {
 	// Choose which index to show || render in UI
-	const [activeIndex, setActiveIndex] = useState(0);
+	const [activeIndex, setActiveIndex] = useState(componentList.length - 1);
 
 	const isValidIndex =
 		componentList.length > 0 &&

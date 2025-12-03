@@ -21,7 +21,7 @@ const NavigateBtn = ({ onIndexSelect }) => {
 				>
 					{obj.id}
 				</button>
-			))}
+			)).reverse()}
 		</div>
 	);
 };
