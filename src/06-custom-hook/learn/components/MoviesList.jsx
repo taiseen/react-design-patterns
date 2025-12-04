@@ -9,7 +9,7 @@ const MoviesList = () => {
   if (error) return <p className="text-red-500">Error: {error}</p>;
 
   return (
-    <div className="px-4 py-3 bg-slate-700 rounded">
+    <div className="px-4 py-3 pb-4 bg-slate-700 rounded">
       <h2 className="text-2xl mb-2">🎬 Movies</h2>
 
       <ul className="space-y-2">

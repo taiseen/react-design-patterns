@@ -4,7 +4,7 @@ import AuthPanel from "./components/AuthPanel";
 
 const CustomHookLearn = () => {
   return (
-    <div className="flex flex-col items-center gap-4 mt-3">
+    <div className="flex flex-col items-center gap-6 mt-6">
       <ThemeSwitcher />
       <MoviesList />
       <AuthPanel />

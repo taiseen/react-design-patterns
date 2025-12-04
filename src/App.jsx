@@ -6,9 +6,11 @@ import componentList from "./db";
 import { useState } from "react";
 import { Suspense } from "react";
 
+const RUNNING_TASK_IDX = componentList.length - 2
+
 const App = () => {
 	// Choose which index to show || render in UI
-	const [activeIndex, setActiveIndex] = useState(componentList.length - 1);
+	const [activeIndex, setActiveIndex] = useState(RUNNING_TASK_IDX);
 
 	const isValidIndex =
 		componentList.length > 0 &&
@@ -19,7 +21,7 @@ const App = () => {
 
 	return (
 		<main className="bg-slate-800 text-slate-300">
-			<NavigateBtn onIndexSelect={setActiveIndex} />
+			<NavigateBtn onIndexSelect={setActiveIndex} currentTaskIdx={RUNNING_TASK_IDX} />
 
 			{activeComponent ? (
 				<RootContainerLayout

@@ -15,6 +15,7 @@ const AuthPanel = () => {
     e.preventDefault();
 
     login(form.username, form.password);
+    setForm({ username: "", password: "" });
   };
 
   return (
@@ -34,23 +35,23 @@ const AuthPanel = () => {
       ) : (
         <form onSubmit={handleSubmit} className="flex flex-col gap-3">
           <input
+            required
             type="text"
             name="username"
             placeholder="Username"
             value={form.username}
             onChange={handleChange}
-            className="border rounded p-2"
-            required
+            className="border border-slate-500 rounded p-2 outline-0"
           />
 
           <input
+            required
             type="password"
             name="password"
             placeholder="Password"
             value={form.password}
             onChange={handleChange}
-            className="border rounded p-2"
-            required
+            className="border border-slate-500 rounded p-2 outline-0"
           />
 
           <Button type="submit">Login</Button>

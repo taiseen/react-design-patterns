@@ -75,7 +75,7 @@ Commonly used built-in Hooks:
 
 ## Pitfalls & Best Practices
 
-1. **Don’t overengineer**  
+1. **Don’t over-engineer**  
    → Only extract logic into a hook if it’s reused or complex.
 2. **Avoid unnecessary re-renders**  
    → Use `useMemo`/`useCallback` when returning objects/functions from hooks.

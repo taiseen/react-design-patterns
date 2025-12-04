@@ -1,9 +1,9 @@
 import componentList from "../db";
 import { useState } from 'react';
 
-const NavigateBtn = ({ onIndexSelect }) => {
+const NavigateBtn = ({ onIndexSelect, currentTaskIdx }) => {
 
-	const [isSelected, setIsSelected] = useState('');
+	const [isSelected, setIsSelected] = useState(currentTaskIdx);
 
 	const handleSelect = (id) => {
 		onIndexSelect(id);
