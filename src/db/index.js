@@ -1,4 +1,5 @@
 import { lazy } from "react";
+import CustomHookTask from "../06-custom-hook/task";
 
 const ContactFormWithRef = lazy(() => import("../02-controlled-uncontrolled/task/uncontrolled/ContactFormWithRef"));
 const ContactFormNoRef = lazy(() => import("../02-controlled-uncontrolled/task/uncontrolled/ContactFormNoRef"));
@@ -158,13 +159,13 @@ const day6 = [
         props: {}
     },
     // Day-6: ✅✅✅ [TASK] Custom Hook
-    // {
-    //     id: "✅ Day-6-task",
-    //     title: "Pattern:- Custom Hook",
-    //     description: "Custom hooks are functions that let you reuse stateful logic between components. They are a way to abstract away complex logic and make it easier to reuse across multiple components.",
-    //     component: CustomHookTask,
-    //     props: {}
-    // },
+    {
+        id: "✅ Day-6-task",
+        title: "Pattern:- Custom Hook",
+        description: "Custom hooks are functions that let you reuse stateful logic between components. They are a way to abstract away complex logic and make it easier to reuse across multiple components.",
+        component: CustomHookTask,
+        props: {}
+    },
 ]
 
 
