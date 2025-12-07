@@ -13,6 +13,7 @@ const MovieWithHOCLearn = lazy(() => import("../05-higher-order-component/learn"
 const RoleWithHOCTask = lazy(() => import("../05-higher-order-component/task"));
 const ContextProviderLearn = lazy(() => import("../07-context-provider/learn"));
 const RenderPropsPatternLearn = lazy(() => import("../04-render-props/learn"));
+const ContextProviderTask = lazy(() => import("../07-context-provider/task"));
 const RenderPropsPatternTask = lazy(() => import("../04-render-props/task"));
 const CompoundLearn = lazy(() => import("../03-compound-components/learn"));
 const CompoundTask = lazy(() => import("../03-compound-components/task"));
@@ -178,16 +179,14 @@ const day7 = [
         props: {}
     },
     // Day-7: ✅✅✅ [TASK] Context Provider
-    // {
-    //     id: "✅ Day-7-task",
-    //     title: "Pattern:- Context Provider",
-    //     description: "Context provides a way to pass data through the component tree without passing props down manually at every level.",
-    //     component: ,
-    //     props: {}
-    // },
+    {
+        id: "✅ Day-7-task",
+        title: "Pattern:- Context Provider",
+        description: "Context provides a way to pass data through the component tree without passing props down manually at every level.",
+        component: ContextProviderTask,
+        props: {}
+    },
 ]
-
-
 
 
 const componentList = [
