@@ -1,4 +1,5 @@
 import { lazy } from "react";
+import OptimisticUILearn from "../08-optimistic-ui/learn";
 
 const ContactFormWithRef = lazy(() => import("../02-controlled-uncontrolled/task/uncontrolled/ContactFormWithRef"));
 const ContactFormNoRef = lazy(() => import("../02-controlled-uncontrolled/task/uncontrolled/ContactFormNoRef"));
@@ -188,6 +189,26 @@ const day7 = [
     },
 ]
 
+const day8 = [
+    // Day-8: ✨✨✨ [LEARN] Optimistic UI
+    {
+        id: "✨ Day-8-learn",
+        title: "Pattern:- Optimistic UI",
+        description: "Optimistic UI is a pattern that allows you to update the UI without waiting for a server response.",
+        component: OptimisticUILearn,
+        props: {}
+    },
+    // Day-8: ✅✅✅ [TASK] Optimistic UI
+    // {
+    //     id: "✅ Day-8-task",
+    //     title: "Pattern:- Optimistic UI",
+    //     description: "Optimistic UI is a pattern that allows you to update the UI without waiting for a server response.",
+    //     component: OptimisticUITask,
+    //     props: {}
+    // },
+]
+
+
 
 const componentList = [
     ...day1,
@@ -197,6 +218,7 @@ const componentList = [
     ...day5,
     ...day6,
     ...day7,
+    ...day8,
 ];
 
 export default componentList;
