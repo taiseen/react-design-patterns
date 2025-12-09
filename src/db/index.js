@@ -1,5 +1,4 @@
 import { lazy } from "react";
-import OptimisticUILearn from "../08-optimistic-ui/learn";
 
 const ContactFormWithRef = lazy(() => import("../02-controlled-uncontrolled/task/uncontrolled/ContactFormWithRef"));
 const ContactFormNoRef = lazy(() => import("../02-controlled-uncontrolled/task/uncontrolled/ContactFormNoRef"));
@@ -18,6 +17,8 @@ const ContextProviderTask = lazy(() => import("../07-context-provider/task"));
 const RenderPropsPatternTask = lazy(() => import("../04-render-props/task"));
 const CompoundLearn = lazy(() => import("../03-compound-components/learn"));
 const CompoundTask = lazy(() => import("../03-compound-components/task"));
+const OptimisticUILearn = lazy(() => import("../08-optimistic-ui/learn"));
+const OptimisticUITask = lazy(() => import("../08-optimistic-ui/task"));
 const CustomHookLearn = lazy(() => import("../06-custom-hook/learn"));
 const CustomHookTask = lazy(() => import("../06-custom-hook/task"));
 
@@ -199,13 +200,13 @@ const day8 = [
         props: {}
     },
     // Day-8: ✅✅✅ [TASK] Optimistic UI
-    // {
-    //     id: "✅ Day-8-task",
-    //     title: "Pattern:- Optimistic UI",
-    //     description: "Optimistic UI is a pattern that allows you to update the UI without waiting for a server response.",
-    //     component: OptimisticUITask,
-    //     props: {}
-    // },
+    {
+        id: "✅ Day-8-task",
+        title: "Pattern:- Optimistic UI",
+        description: "Optimistic UI is a pattern that allows you to update the UI without waiting for a server response.",
+        component: OptimisticUITask,
+        props: {}
+    },
 ]
 
 
