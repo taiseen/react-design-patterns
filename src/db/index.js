@@ -19,6 +19,7 @@ const CompoundLearn = lazy(() => import("../03-compound-components/learn"));
 const CompoundTask = lazy(() => import("../03-compound-components/task"));
 const OptimisticUILearn = lazy(() => import("../08-optimistic-ui/learn"));
 const StateReducerLearn = lazy(() => import("../09-state-reducer/learn"));
+const StateReducerTask = lazy(() => import("../09-state-reducer/task"));
 const OptimisticUITask = lazy(() => import("../08-optimistic-ui/task"));
 const CustomHookLearn = lazy(() => import("../06-custom-hook/learn"));
 const CustomHookTask = lazy(() => import("../06-custom-hook/task"));
@@ -220,13 +221,13 @@ const day9 = [
         props: {}
     },
     // Day-9: ✅✅✅ [TASK] State Reducer
-    // {
-    //     id: "✅ Day-9-task",
-    //     title: "Pattern:- State Reducer",
-    //     description: "A React design pattern that decouples state update logic from components by moving it into a separate, reusable function called a reducer",
-    //     component: StateReducerTask,
-    //     props: {}
-    // },
+    {
+        id: "✅ Day-9-task",
+        title: "Pattern:- State Reducer",
+        description: "A React design pattern that decouples state update logic from components by moving it into a separate, reusable function called a reducer",
+        component: StateReducerTask,        
+        props: {}
+    },
 ]
 
 
