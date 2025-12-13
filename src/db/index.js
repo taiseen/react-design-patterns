@@ -23,6 +23,7 @@ const StateReducerTask = lazy(() => import("../09-state-reducer/task"));
 const OptimisticUITask = lazy(() => import("../08-optimistic-ui/task"));
 const CustomHookLearn = lazy(() => import("../06-custom-hook/learn"));
 const CustomHookTask = lazy(() => import("../06-custom-hook/task"));
+const PubSubLearn = lazy(() => import("../10-pub-sub/learn"));
 
 const day1 = [
     // Day-1: ✨✨✨ [LEARN] Container-Presenter
@@ -225,10 +226,30 @@ const day9 = [
         id: "✅ Day-9-task",
         title: "Pattern:- State Reducer",
         description: "A React design pattern that decouples state update logic from components by moving it into a separate, reusable function called a reducer",
-        component: StateReducerTask,        
+        component: StateReducerTask,
         props: {}
     },
 ]
+
+const day10 = [
+    // Day-10: ✨✨✨ [LEARN] Pub-Sub
+    {
+        id: "✨ Day-10-learn",
+        title: "Pattern:- Pub-Sub",
+        description: "Pub-Sub is a design pattern that allows components to communicate with each other without having direct references to each other.",
+        component: PubSubLearn,
+        props: {}
+    },
+    // Day-10: ✅✅✅ [TASK] Pub-Sub
+    // {
+    //     id: "✅ Day-10-task",
+    //     title: "Pattern:- Pub-Sub",
+    //     description: "Pub-Sub is a design pattern that allows components to communicate with each other without having direct references to each other.",
+    //     component: ,
+    //     props: {}
+    // },
+]
+
 
 
 const componentList = [
@@ -241,6 +262,7 @@ const componentList = [
     ...day7,
     ...day8,
     ...day9,
+    ...day10,
 ];
 
 export default componentList;
