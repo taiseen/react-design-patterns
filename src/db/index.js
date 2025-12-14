@@ -24,6 +24,7 @@ const OptimisticUITask = lazy(() => import("../08-optimistic-ui/task"));
 const CustomHookLearn = lazy(() => import("../06-custom-hook/learn"));
 const CustomHookTask = lazy(() => import("../06-custom-hook/task"));
 const PubSubLearn = lazy(() => import("../10-pub-sub/learn"));
+const PubSubTask = lazy(() => import("../10-pub-sub/task"));
 
 const day1 = [
     // Day-1: ✨✨✨ [LEARN] Container-Presenter
@@ -241,13 +242,13 @@ const day10 = [
         props: {}
     },
     // Day-10: ✅✅✅ [TASK] Pub-Sub
-    // {
-    //     id: "✅ Day-10-task",
-    //     title: "Pattern:- Pub-Sub",
-    //     description: "Pub-Sub is a design pattern that allows components to communicate with each other without having direct references to each other.",
-    //     component: ,
-    //     props: {}
-    // },
+    {
+        id: "✅ Day-10-task",
+        title: "Pattern:- Pub-Sub",
+        description: "Pub-Sub is a design pattern that allows components to communicate with each other without having direct references to each other.",
+        component: PubSubTask,
+        props: {}
+    },
 ]
 
 
