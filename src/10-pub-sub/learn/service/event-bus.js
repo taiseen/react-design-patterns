@@ -11,7 +11,8 @@ const eventBus = {
 
             const handlers = eventList.get(eventName);
 
-            handlers.forEach(handler => handler(payload));
+            // each handler CALLED here ⬇️⬇️⬇️⬇️⬇️⬇️
+            handlers.forEach(handler => handler(payload)); 
         }
 
         // 📢 Broadcast to other tabs (avoid infinite loops)
@@ -29,6 +30,7 @@ const eventBus = {
             eventList.set(eventName, new Set());
         }
 
+        // handler STORED here ⬇️⬇️⬇️⬇️⬇️⬇️
         eventList.get(eventName).add(handler);
 
         return () => eventList.get(eventName).delete(handler);
