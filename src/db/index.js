@@ -21,6 +21,7 @@ const OptimisticUILearn = lazy(() => import("../08-optimistic-ui/learn"));
 const StateReducerLearn = lazy(() => import("../09-state-reducer/learn"));
 const StateReducerTask = lazy(() => import("../09-state-reducer/task"));
 const OptimisticUITask = lazy(() => import("../08-optimistic-ui/task"));
+const PerformanceLearn = lazy(() => import("../11-performance/learn"));
 const CustomHookLearn = lazy(() => import("../06-custom-hook/learn"));
 const CustomHookTask = lazy(() => import("../06-custom-hook/task"));
 const PubSubLearn = lazy(() => import("../10-pub-sub/learn"));
@@ -251,6 +252,25 @@ const day10 = [
     },
 ]
 
+const day11 = [
+    // Day-11: ✨✨✨ [LEARN] Performance
+    {
+        id: "✨ Day-11-learn-a",
+        title: "Pattern:- Performance",
+        description: "Performance is a design pattern that allows improved user-experience and performance.",
+        component: PerformanceLearn,
+        props: {}
+    },
+    // Day-11: ✅✅✅ [TASK] Performance
+    // {
+    //     id: "✅ Day-11-task",
+    //     title: "Pattern:- Performance Learn",
+    //     description: "Performance Learn is a design pattern that allows components to communicate with each other without having direct references to each other.",
+    //     component: PerformanceTask,
+    //     props: {}
+    // },
+]
+
 
 
 const componentList = [
@@ -264,6 +284,16 @@ const componentList = [
     ...day8,
     ...day9,
     ...day10,
+    ...day11,
+
+
+    // {
+    //     id: "extra-nested-loop",
+    //     title: "Pattern:- Nested Loop over Object Keys",
+    //     description: "Demonstrates how to dynamically render content by iterating over object keys using Object.keys() in React.",
+    //     component: lazy(() => import("../../server/demo/index.jsx")),
+    //     props: {}
+    // }
 ];
 
 export default componentList;
