@@ -17,9 +17,10 @@ const ScrollTracker = () => {
   }, []);
 
   return (
-    <div className="border h-48 p-1">
-      <h2 className="text-xl">Scroll Position (Throttled)</h2>
-      <p>{throttledY}</p>
+    <div className="space-y-2">
+      <h1 className="text-lg font-semibold">Throttling:- Scroll Position</h1>
+
+      <p className="borderV1 h-64 px-2 py-1">{throttledY}</p>
     </div>
   );
 };
