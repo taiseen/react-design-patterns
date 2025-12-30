@@ -14,7 +14,7 @@ const MemoProfileTrack = () => {
   };
 
   return (
-    <div className="space-y-2">
+    <div className="space-y-1">
       <h1 className="text-lg font-semibold flex justify-between items-center">
         Memo:- Profile Tracker{" "}
         <span className="bg-green-200 text-slate-800 px-2 py-1 text-xs rounded">

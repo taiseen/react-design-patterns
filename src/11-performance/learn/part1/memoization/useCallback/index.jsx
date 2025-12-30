@@ -24,7 +24,7 @@ const ParentUseCallBack = () => {
   console.log("Parent-Use-CallBack Rendered");
 
   return (
-    <div>
+    <div className="space-y-1">
       <h1 className="text-lg font-semibold">useCallback:-</h1>
 
       <div className="p-2 borderV1 space-y-2">

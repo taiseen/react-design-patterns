@@ -1,6 +1,7 @@
 import ParentUseCallBack from "./memoization/useCallback";
-import MemoProfileTrack from "./memoization/memo";
 import ScrollTracker from "./throttling/ScrollTracker";
+import MemoProfileTrack from "./memoization/memo";
+import UserSorting from "./memoization/useMemo";
 import SearchBox from "./debouncing/SearchBox";
 
 const Part1 = () => {
@@ -9,6 +10,8 @@ const Part1 = () => {
       <MemoProfileTrack />
 
       <ParentUseCallBack />
+
+      <UserSorting />
 
       <SearchBox />
 
