@@ -13,7 +13,7 @@ const useThrottle = (value, delay = 300) => {
             const now = Date.now();
 
             if (now - lastExecuted.current >= delay) {
-                console.log("Do DOM Manipulation");
+                console.log("Throttling - Do DOM Manipulation");
 
                 setThrottledValue(value);
 

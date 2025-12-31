@@ -4,7 +4,7 @@ import { useState, useEffect } from "react";
 const ScrollTracker = () => {
   const [scrollY, setScrollY] = useState(0);
 
-  const throttledY = useThrottle(scrollY, 3000);
+  const throttledScrollY = useThrottle(scrollY, 3000); // 3s
 
   useEffect(() => {
     const handleScroll = () => {
@@ -20,7 +20,7 @@ const ScrollTracker = () => {
     <div className="space-y-2">
       <h1 className="text-lg font-semibold">Throttling:- Scroll Position</h1>
 
-      <p className="borderV1 h-64 px-2 py-1">{throttledY}</p>
+      <p className="borderV1 h-64 px-2 py-1">{throttledScrollY}</p>
     </div>
   );
 };
