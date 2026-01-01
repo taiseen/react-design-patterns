@@ -9,8 +9,6 @@ import {
 } from "./const";
 
 const PubSubLearn = () => {
-  const openNewTab = () => window.open(window.location.href, "_blank");
-
   return (
     <div className="p-4 container mx-auto space-y-5">
       <div className="flex gap-4 justify-center flex-wrap">
@@ -19,13 +17,14 @@ const PubSubLearn = () => {
         <div className="space-y-2 text-center">
           <PublisherCartBtn />
 
-          <button
-            type="button"
-            onClick={openNewTab}
+          <a
+            target="_blank"
+            rel="noreferrer"
+            href="/day-10-learn"
             className="text-center text-slate-500/80 hover:underline hover:text-slate-400 duration-300 underline-offset-6 cursor-pointer"
           >
             Open same-page in new tab - to see the button click effect & log
-          </button>
+          </a>
         </div>
       </div>
 

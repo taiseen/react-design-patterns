@@ -3,7 +3,7 @@ import NotificationPanel from "./components/subscriber/NotificationPanel";
 import Button from "../../components/ui/Button";
 
 const PubSubTask = () => {
-  const handleOpenTab = () => window.open(window.location.href, "_blank");
+  const handleOpenTab = () => window.open("day-10-task", "_blank");
 
   return (
     <div className="p-4 space-y-4">
