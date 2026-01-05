@@ -1,3 +1,4 @@
+import DashboardIsolated from "./component-isolation";
 import TransitionDemo from "./transition";
 import LazyLoader from "./lazy-loading";
 
@@ -9,6 +10,8 @@ const Part2 = () => {
       <TransitionDemo />
 
       <LazyLoader />
+
+      <DashboardIsolated />
     </div>
   );
 };
